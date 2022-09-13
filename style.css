@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+  }
+  
+  span {
+    background: url("./z3659664393141_afd69b2a70abe7bc72dd8ce4d51bf112.jpg");
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    pointer-events: none;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: animate 6s linear;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+      /* filter: hue-rotate(0); */
+    }
+    100% {
+      transform: translate(-50%, -5000%);
+      opacity: 0;
+      /* filter: hue-rotate(720deg); */
+    }
+  }
+  #header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    flex-direction: column;
+    color: #fff;
+    margin: 170px;
+    font-size: 24px;
+  
+    
+  }
+  #heading {
+    line-height: 24px;
+    text-transform: capitalize;
+    cursor: pointer;
+  
+  }
+  #warp {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  #od {
+    width: 100%;
+  }
+  #no {
+    margin-right: 100px;
+    display:block;
+    position:relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(216, 222, 119);
+    border-radius: 5px;
+    height: 43px;
+    line-height: 44px;
+    padding: 0 8px;
+    transition: all linear 0.2s;
+    cursor: pointer;
+  }
+  #no:hover {
+    height: 43px;
+  }
+  #emdongy {
+     background-color: rgb(216, 222, 119);
+     padding: 7px;
+     border-radius: 5px;
+    cursor: pointer;
+  
+  }
+  #fa-heart {
+    color: red;
+    margin-top: 2px;
+    
+  }
+  #footer {
+    width: 100%;
+    background-color: #fff;
+    height: 80px;
+    z-index: 10;
+    line-height: 80px;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    color: pink;
+    bottom: 222px;
+    display: none;
+    animation: inline linear 0.2s;
+  }
+  @keyframes inline {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+  
+    }
+  }
+  
+  
+  
